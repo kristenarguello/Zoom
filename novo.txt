@@ -1,0 +1,56 @@
+// red
+				for (int k = 0; k < 3; k++) {
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3].r = 0;
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3].g = 0;
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3].b = 0;
+				}
+				if (red > 74 && red < 135) {
+					imageNew->pix[(j * 3 + 1) * imageNew->width + i * 3].r = 255;
+				}
+				else if (red > 134 && red < 180) {
+					imageNew->pix[(j * 3) * imageNew->width + i * 3].r = 255;
+					imageNew->pix[(j * 3 + 2) * imageNew->width + i * 3].r = 255;
+				}
+				else {
+					imageNew->pix[(j * 3) * imageNew->width + i * 3].r = 255;
+					imageNew->pix[(j * 3 + 1) * imageNew->width + i * 3].r = 255;
+					imageNew->pix[(j * 3 + 2) * imageNew->width + i * 3].r = 255;
+				}
+
+				// green
+				for (int k = 0; k < 3; k++) {
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3 + 1].r = 0;
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3 + 1].g = 0;
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3 + 1].b = 0;
+				}
+				if (green > 74 && green < 135) {
+					imageNew->pix[(j * 3 + 1) * imageNew->width + i * 3 + 1].g = 255;
+				}
+				else if (green > 134 && green < 180) {
+					imageNew->pix[(j * 3) * imageNew->width + i * 3 + 1].g = 255;
+					imageNew->pix[(j * 3 + 2) * imageNew->width + i * 3 + 1].g = 255;
+				}
+				else {
+					imageNew->pix[(j * 3) * imageNew->width + i * 3 + 1].g = 255;
+					imageNew->pix[(j * 3 + 1) * imageNew->width + i * 3 + 1].g = 255;
+					imageNew->pix[(j * 3 + 2) * imageNew->width + i * 3 + 1].g = 255;
+				}
+
+				// blue
+				for (int k = 0; k < 3; k++) {
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3 + 2].r = 0;
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3 + 2].g = 0;
+					imageNew->pix[(j * 3 + k) * imageNew->width + i * 3 + 2].b = 0;
+				}
+				if (blue > 74 && blue < 135) {
+					imageNew->pix[(j * 3 + 1) * imageNew->width + i * 3 + 2].b = 255;
+				}
+				else if (blue > 134 && blue < 180) {
+					imageNew->pix[(j * 3) * imageNew->width + i * 3 + 2].b = 255;
+					imageNew->pix[(j * 3 + 2) * imageNew->width + i * 3 + 2].b = 255;
+				}
+				else {
+					imageNew->pix[(j * 3) * imageNew->width + i * 3 + 2].b = 255;
+					imageNew->pix[(j * 3 + 1) * imageNew->width + i * 3 + 2].b = 255;
+					imageNew->pix[(j * 3 + 2) * imageNew->width + i * 3 + 2].b = 255;
+				}
