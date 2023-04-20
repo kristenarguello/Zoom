@@ -9,13 +9,11 @@ int main()
 	struct image_s dataNew;
 	struct image_s *imageNew = &dataNew;
 
-	int i, j, r, r1, h, w, red, green, blue;
+	int i, j, r, r1, red, green, blue;
 
 	r1 = read_ppm("lena.ppm", image);
 	if (r1 == 0) {
-		h = image->height;
-		w = image->width;
-		r = new_ppm(imageNew, w*3, h*3);
+		r = new_ppm(imageNew, (image->width)*3, (image->height)*3);
 	}
 
 	if (r == 0 && r1 == 0) {
@@ -84,7 +82,7 @@ int main()
 				}
 			}
 		}
-		write_ppm("zoomNovo.ppm", imageNew);
+		write_ppm("zoomLena.ppm", imageNew);
 		printf("Imagem com zoom 3x criada com sucesso!");
 
 		free_ppm(image);
