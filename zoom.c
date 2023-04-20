@@ -83,6 +83,7 @@ int main()
 			}
 		}
 		write_ppm("zoomLena.ppm", imageNew);
+		
 		printf("Imagem com zoom 3x criada com sucesso!");
 
 		free_ppm(image);
